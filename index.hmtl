@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Viu Internet - Planos de internet fibra óptica de alta velocidade. Navegação ilimitada, suporte 24h e instalação rápida. Consulte nossos planos empresariais e residenciais.">
+    <meta name="keywords" content="internet fibra óptica, planos de internet, Viu Internet, banda larga, internet ilimitada, provedor de internet">
+    <meta name="author" content="Viu Internet">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.seusite.com.br/">
+    <title>Viu Internet - Fibra Óptica de Verdade | Planos Residenciais e Empresariais</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #0d0d0d;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+        header {
+            background: #1a1a1a;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            border-bottom: 2px solid #b300ff;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        header .logo {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #b300ff;
+            text-decoration: none;
+        }
+        header nav a {
+            color: #ccc;
+            text-decoration: none;
+            margin-left: 2rem;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        header nav a:hover {
+            color: #b300ff;
+        }
+        .hero {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d0040 100%);
+            text-align: center;
+            padding: 5rem 2rem;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            color: #fff;
+            margin-bottom: 1rem;
+        }
+        .hero p {
+            font-size: 1.3rem;
+            max-width: 700px;
+            margin: 0 auto 2rem;
+            color: #ccc;
+        }
+        .hero .cta {
+            display: inline-block;
+            background: #b300ff;
+            color: white;
+            padding: 1rem 2.5rem;
+            font-size: 1.3rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s, transform 0.2s;
+            box-shadow: 0 0 15px rgba(179, 0, 255, 0.5);
+        }
+        .hero .cta:hover {
+            background: #9500cc;
+            transform: scale(1.05);
+        }
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin: 3rem 0 2rem;
+            color: #b300ff;
+        }
+        .planos {
+            padding: 2rem;
+            background: #121212;
+        }
+        .grid-planos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .card-plano {
+            background: #1e1e1e;
+            border: 1px solid #333;
+            border-radius: 15px;
+            padding: 2rem;
+            width: 280px;
+            text-align: center;
+            transition: transform 0.3s, border-color 0.3s;
+            position: relative;
+        }
+        .card-plano:hover {
+            transform: translateY(-5px);
+            border-color: #b300ff;
+        }
+        .card-plano h3 {
+            font-size: 2rem;
+            color: #b300ff;
+            margin-bottom: 0.5rem;
+        }
+        .card-plano .preco {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #fff;
+            margin: 1rem 0;
+        }
+        .card-plano .preco small {
+            font-size: 1rem;
+            color: #aaa;
+        }
+        .card-plano ul {
+            list-style: none;
+            margin: 1.5rem 0;
+            color: #ccc;
+            text-align: left;
+            padding-left: 1rem;
+        }
+        .card-plano ul li::before {
+            content: "✔";
+            color: #b300ff;
+            margin-right: 0.5rem;
+        }
+        .card-plano .btn-assinar {
+            display: inline-block;
+            background: transparent;
+            border: 2px solid #b300ff;
+            color: #b300ff;
+            padding: 0.7rem 1.8rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+        .card-plano .btn-assinar:hover {
+            background: #b300ff;
+            color: #fff;
+        }
+        .sobre, .contato {
+            padding: 4rem 2rem;
+            background: #0d0d0d;
+            text-align: center;
+        }
+        .sobre p {
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 1.1rem;
+            color: #bbb;
+        }
+        .contato .info-box {
+            background: #1a1a1a;
+            display: inline-block;
+            padding: 2rem;
+            border-radius: 15px;
+            border: 1px solid #333;
+            text-align: left;
+            margin-top: 2rem;
+        }
+        .info-box p {
+            margin: 0.8rem 0;
+            color: #ccc;
+        }
+        .info-box strong {
+            color: #b300ff;
+        }
+        footer {
+            background: #000;
+            padding: 2rem;
+            text-align: center;
+            border-top: 2px solid #b300ff;
+            color: #777;
+            font-size: 0.9rem;
+        }
+        footer a {
+            color: #b300ff;
+            text-decoration: none;
+            margin: 0 0.5rem;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+            }
+            header nav {
+                margin-top: 1rem;
+            }
+            header nav a {
+                margin: 0 0.8rem;
+            }
+            .hero h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="/" class="logo">VIU INTERNET</a>
+        <nav>
+            <a href="#planos">Planos</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#contato">Contato</a>
+            <a href="/politica-de-privacidade.html">Privacidade</a>
+            <a href="/termos-de-uso.html">Termos</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>A internet que você merece, sem travamentos</h1>
+        <p>Fibra óptica de alta velocidade para sua casa ou empresa. Navegação ilimitada, suporte 24h e instalação em até 48h.</p>
+        <a href="#planos" class="cta">Ver Planos</a>
+    </section>
+
+    <section id="planos" class="planos">
+        <h2 class="section-title">Nossos Planos</h2>
+        <div class="grid-planos">
+            <!-- Plano Residencial 1 -->
+            <div class="card-plano">
+                <h3>200 Mega</h3>
+                <div class="preco">R$89<small>/mês</small></div>
+                <ul>
+                    <li>Download 200 Mbps</li>
+                    <li>Upload 100 Mbps</li>
+                    <li>Wi-Fi 6 grátis</li>
+                    <li>Instalação gratuita</li>
+                    <li>Suporte 24h</li>
+                </ul>
+                <a href="https://wa.me/5511999999999?text=Quero+assinar+o+plano+200+Mega" class="btn-assinar" target="_blank">Assinar pelo WhatsApp</a>
+            </div>
+            <!-- Plano Residencial 2 -->
+            <div class="card-plano">
+                <h3>400 Mega</h3>
+                <div class="preco">R$109<small>/mês</small></div>
+                <ul>
+                    <li>Download 400 Mbps</li>
+                    <li>Upload 200 Mbps</li>
+                    <li>Wi-Fi 6 Mesh incluso</li>
+                    <li>Instalação gratuita</li>
+                    <li>IP Fixo (opcional)</li>
+                </ul>
+                <a href="https://wa.me/5511999999999?text=Quero+assinar+o+plano+400+Mega" class="btn-assinar" target="_blank">Assinar pelo WhatsApp</a>
+            </div>
+            <!-- Plano Empresarial -->
+            <div class="card-plano" style="border-color: #b300ff;">
+                <h3>1 Giga</h3>
+                <div class="preco">R$199<small>/mês</small></div>
+                <ul>
+                    <li>Download 1000 Mbps</li>
+                    <li>Upload 500 Mbps</li>
+                    <li>Link dedicado</li>
+                    <li>IP Fixo incluso</li>
+                    <li>Suporte prioritário</li>
+                </ul>
+                <a href="https://wa.me/5511999999999?text=Quero+assinar+o+plano+1+Giga+Empresarial" class="btn-assinar" target="_blank">Fale Conosco</a>
+            </div>
+        </div>
+        <p style="text-align:center; margin-top:1rem; color:#aaa; font-size:0.9rem;">* Preços válidos para contratação até o fim do mês. Consulte disponibilidade em sua região. Velocidades podem variar.</p>
+    </section>
+
+    <section id="sobre" class="sobre">
+        <h2 class="section-title">Sobre a Viu Internet</h2>
+        <p>Somos um provedor de internet 100% fibra óptica, comprometido em levar conexão estável e de alta performance para residências e empresas. Atuamos com transparência, suporte humanizado e tecnologia de ponta. Nossa missão é conectar você ao que importa.</p>
+        <p style="margin-top:1rem;">CNPJ: 00.000.000/0001-00 (substitua pelo seu) | Autorizado pela Anatel.</p>
+    </section>
+
+    <section id="contato" class="contato">
+        <h2 class="section-title">Fale com a gente</h2>
+        <div class="info-box">
+            <p><strong>📞 Telefone/WhatsApp:</strong> (11) 99999-9999</p>
+            <p><strong>📧 E-mail:</strong> contato@viuinternet.com.br</p>
+            <p><strong>📍 Endereço:</strong> Rua Exemplo, 123, Centro, Cidade - UF, CEP 00000-000</p>
+            <p><strong>⏰ Atendimento:</strong> Seg a Sex 8h-20h | Sáb 9h-15h</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Viu Internet. Todos os direitos reservados.</p>
+        <p>
+            <a href="/politica-de-privacidade.html">Política de Privacidade</a> |
+            <a href="/termos-de-uso.html">Termos de Uso</a>
+        </p>
+        <p style="margin-top:0.5rem;">CNPJ: 00.000.000/0001-00 | Viu Internet LTDA</p>
+    </footer>
+</body>
+</html>
